@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/ai.png';
 
 const links = [
-  { path: '/', text: 'Home' },
-  { path: 'contact', text: 'Contact' },
+  { path: '/', text: 'Rockets' },
+  { path: 'missions', text: 'Missions' },
+  { path: 'profile', text: 'My Profile' },
 ];
 
 const Navbar = () => (
