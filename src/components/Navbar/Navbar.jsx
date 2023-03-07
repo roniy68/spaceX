@@ -1,6 +1,12 @@
 import React from 'react';
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/ai.png';
+
+const links = [
+  { path: '/', text: 'Home' },
+  { path: 'contact', text: 'Contact' },
+];
 
 const Navbar = () => (
   <div className="navbar">
@@ -9,6 +15,19 @@ const Navbar = () => (
     </div>
     <div>
       <h1>SpaceX</h1>
+      <menu>
+        {links.map((link) => (
+          <NavLink
+            key={link.text}
+            to={link.path}
+            style={({ isActive }) => ({
+              color: isActive ? 'red' : 'rgb(53, 148, 207)',
+            })}
+          >
+            {link.text}
+          </NavLink>
+        ))}
+      </menu>
     </div>
   </div>
 );
