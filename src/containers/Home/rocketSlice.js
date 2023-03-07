@@ -12,15 +12,15 @@ export const rocketSlice = createSlice({
   reducers: {
     reserveRocket: (state, action) => ({
       ...state,
-      ...state.reservedRockets.push(state[action.payload]),
-      ...state.totalReservedRockets + 1,
+      reserveRocket: [...state.reservedRockets, action.payload],
+      totalReservedRockets: state.totalReservedRockets + 1,
     }),
     cancelReservation: (state, action) => ({
       ...state,
       ...state.reservedRockets.splice(state.reservedRockets.findIndex(
         (rocket) => rocket.id === action.payload,
       ), 1),
-      ...state.totalReservedRockets - 1,
+      totalReservedRockets: state.totalReservedRockets - 1,
     }),
   },
 });
