@@ -146,6 +146,10 @@ I am always looking for ways to improve my project. If you have any suggestions 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+## 📧 Authors <a name="authors"></a>
+
+- ***[Ahmed Hasan Rony](https://github.com/roniy68)***
+- ***[Nwadinigwe Victor chiemerie](https://github.com/Victor-chiemerie)***
 
 ## 🤝 Contributing <a name="contributing"></a>
 
