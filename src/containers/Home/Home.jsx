@@ -1,11 +1,13 @@
-import React from 'react';
+import logo from '../../assets/ai.png';
 import './Home.css';
 
 const Home = () => (
   <div className="home">
     <ul>
       <li>
-        <div />
+        <div>
+          <img src={logo} height="60px" alt="logo" />
+        </div>
         <div>
           <h2>Falcon 1</h2>
           <p>
@@ -19,7 +21,9 @@ const Home = () => (
         </div>
       </li>
       <li>
-        <div />
+        <div>
+          <img src={logo} height="60px" alt="logo" />
+        </div>
         <div>
           <h2>Falcon 1</h2>
           <p>
@@ -33,7 +37,9 @@ const Home = () => (
         </div>
       </li>
       <li>
-        <div />
+        <div>
+          <img src={logo} height="60px" alt="logo" />
+        </div>
         <div>
           <h2>Falcon 1</h2>
           <p>
@@ -47,7 +53,9 @@ const Home = () => (
         </div>
       </li>
       <li>
-        <div />
+        <div>
+          <img src={logo} height="60px" alt="logo" />
+        </div>
         <div>
           <h2>Falcon 1</h2>
           <p>
