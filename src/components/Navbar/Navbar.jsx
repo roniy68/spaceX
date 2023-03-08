@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navbar.scss';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/ai.png';
+import styles from './Navbar.module.scss';
+import logo from '../../assets/planet.png';
 
 const links = [
   { path: '/', text: 'Rockets' },
@@ -10,7 +10,7 @@ const links = [
 ];
 
 const Navbar = () => (
-  <div className="navbar">
+  <div className={styles.navbar}>
     <div>
       <img src={logo} height="60px" alt="logo" />
     </div>
