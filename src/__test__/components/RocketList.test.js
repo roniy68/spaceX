@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
-import RocketList from 'components/RocketList';
+import { RocketList } from 'components';
 import store from 'redux/store';
 
 describe('RocketsLists', () => {

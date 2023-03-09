@@ -34,7 +34,7 @@
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off",
     "no-shadow": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
   },
   "ignorePatterns": [
     "dist/",
