@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { useSelector } from 'react-redux';
 import styles from './Profile.module.css';
-import { selectReservedRockets } from '../redux/rocket/rocketSlice';
+import { selectReservedRockets } from '../../redux/rocket/rocketSlice';
 
 function Profile() {
   const missions = useSelector((state) => state.missions.missionstore);
