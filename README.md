@@ -64,7 +64,7 @@ A web-based application to understand about the basics of React - Redux
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-***Live*** :  [spaceX](https://roniy68.github.io/spaceX).
+***Live*** :  [spaceX](https://https://ahr-spacex.netlify.app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
