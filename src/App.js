@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { fetchRockets } from './redux/rocket/rocketSlice';
+import { fetchRockets } from 'redux/rocket/rocketSlice';
 import {
   Missions, Navbar, Profile, RocketList,
-} from './components';
+} from 'components';
 
 function App() {
   const dispatch = useDispatch();
