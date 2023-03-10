@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import Icon from 'assets/planet.png';
+import Icon from '../../assets/planet.png';
 
 export default function Navbar() {
   return (
