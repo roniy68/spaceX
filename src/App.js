@@ -1,24 +1,29 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Footer, Navbar } from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { fetchRockets } from './redux/rocket/rocketSlice';
 import {
-  Home, Missions, Profile, NotFound,
-} from './containers';
+  Missions, Navbar, Profile, RocketList,
+} from './components';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="missions" element={<Missions />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
+          <Route exact path="/" element={<RocketList />} />
+          <Route path="/mission" element={<Missions />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
-        <Footer />
-      </div>
-    </Router>
+      </BrowserRouter>
+    </div>
   );
 }
 

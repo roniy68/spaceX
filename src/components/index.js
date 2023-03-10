@@ -1,2 +1,4 @@
+export { default as Missions } from './Missions/Missions';
 export { default as Navbar } from './Navbar/Navbar';
-export { default as Footer } from './Footer/Footer';
+export { default as Profile } from './Profile/Profile';
+export { default as RocketList } from './RocketList/RocketList';
