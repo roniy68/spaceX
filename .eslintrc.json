@@ -35,7 +35,7 @@
     "import/no-extraneous-dependencies": "off",
     "no-shadow": "off",
     "import/extensions": "off",
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": 0
   },
   "ignorePatterns": [
     "dist/",
